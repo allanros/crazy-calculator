@@ -12,8 +12,9 @@ class Calculator3:
 
         variance = self.__calculate_variance(input_data)
         multiplication = self.__calculate_multiplication(input_data)
-        self.____verify_results(variance, multiplication)
+        self.__verify_results(variance, multiplication)
 
+        return self.__format_response(variance)
 
     def __validate_body(self, body: Dict) -> List[float]:
         if 'numbers' not in body:
